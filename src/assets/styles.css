@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
 
+:root{
+    --dark: #121212;
+    --dark-36: #212121a1;
+    --gray: #292929;
+    --ligth: #f2f2f2;
+    --bg-base: rgb(34, 193, 195);
+    --bg-gradient-a: rgb(34, 193, 195, 1);
+    --bg-gradient-b: rgb(253, 187, 45, 1);
+}
 
 * {
     margin: 0;
@@ -7,6 +16,7 @@
     box-sizing: border-box;
     outline: none;
     font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
 
 button{
@@ -15,4 +25,39 @@ button{
 
 a{
     text-decoration: none;
+}
+
+/* Container */
+
+.control-container{
+    width: 100vw;
+    height: 100px;
+    background: var(--dark);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.current{
+    width: 100px;
+    height: 100px;
+}
+
+.buttons-containers{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-button{
+    background: transparent;
+    border: none;
+    margin: 0 10px;
+}
+
+.button-icon{
+    width: 16px;
+    height: 16px;
 }

@@ -1,8 +1,13 @@
-const ControlButton = () => {
+type ButtonsProps = {
+    children: any;
+    onClick?: () => void;
+};
+
+const ControlButton = ({ children, onClick }: ButtonsProps) => {
     return (
-        <div>
-            <h3>ControlButton</h3>
-        </div>
+        <button onClick={onClick} className="control-button">
+            { children }
+        </button>
     );
 };
 
