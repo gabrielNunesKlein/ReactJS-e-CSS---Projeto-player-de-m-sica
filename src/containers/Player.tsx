@@ -1,7 +1,10 @@
+import { headerInfo } from "../services/api";
+import PlaylistHeader from "./components/PlaylistHeader"
+
 const Player = () => {
     return (
-        <div>
-            <h3>Player</h3>
+        <div className="player-container">
+            <PlaylistHeader {...headerInfo} />
         </div>
     );
 };
